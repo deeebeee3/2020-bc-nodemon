@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/deeebeee3/2020-bc-nodemon#readme",
   "dependencies": {
-    "chokidar": "^3.4.0"
+    "chokidar": "^3.4.0",
+    "lodash.debounce": "^4.0.8"
   }
 }
