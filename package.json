@@ -1,0 +1,23 @@
+{
+  "name": "2020-bc-nodemon",
+  "version": "1.0.0",
+  "description": "chmod +x index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deeebeee3/2020-bc-nodemon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "watchit": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/deeebeee3/2020-bc-nodemon/issues"
+  },
+  "homepage": "https://github.com/deeebeee3/2020-bc-nodemon#readme"
+}
