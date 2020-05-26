@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/deeebeee3/2020-bc-nodemon/issues"
   },
-  "homepage": "https://github.com/deeebeee3/2020-bc-nodemon#readme"
+  "homepage": "https://github.com/deeebeee3/2020-bc-nodemon#readme",
+  "dependencies": {
+    "chokidar": "^3.4.0"
+  }
 }
