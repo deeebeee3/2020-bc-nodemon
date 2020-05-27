@@ -18,3 +18,5 @@ and run index.js as though it were some kind of executable (add to package.json)
 Make our current project globally available in every directory and everywhere else:
 npm link
 
+See docs:
+watchit -h
