@@ -2,13 +2,14 @@
 
 const debounce = require('lodash.debounce');
 const chokidar = require('chokidar');
-const program = require('caporal');
+const prog = require('caporal');
 const fs = require('fs');
+const { spawn } = require ('child_process');
 
-program
+prog
     .version('0.0.1')
     .argument('[filename]', 'Name of a file to execute')
-    .action(async ({filename}) => {
+    .action(async ({ filename }) => {
 
         const name = filename || 'index.js';
 
@@ -18,18 +19,17 @@ program
             throw new Error(`Could not find the file ${name}`);
         }
         
-
-        //wrap start function with debounce
         const start = debounce(() => {
-            console.log('STARTING USERS PROGRAM');
-        }, 100);
+            spawn('node', [name], {stdio: 'inherit'});
+        }, 120);
 
-        chokidar.watch('.')
+        chokidar
+            .watch('.')
             .on('add', start)
-            .on('change', () => start)
-            .on('unlink', () => start);
+            .on('change', start)
+            .on('unlink', start);
     });
 
-program.parse(process.argv);
+prog.parse(process.argv);
 
 

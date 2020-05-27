@@ -1,7 +1,7 @@
 {
   "name": "2020-bc-nodemon",
   "version": "1.0.0",
-  "description": "chmod +x index.js",
+  "description": "creating version of nodemon",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
